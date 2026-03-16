@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: keno-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: LUARMOR_API_KEY
+        sync: false
